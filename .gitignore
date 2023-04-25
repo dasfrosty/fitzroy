@@ -136,8 +136,8 @@ dmypy.json
 terraform.tfstate
 terraform.tfstate.*
 
-# scratch
-scratch/
-
 # build artifacts
-fitzroy_archive.zip
+dist/
+
+# scratch dir
+scratch/

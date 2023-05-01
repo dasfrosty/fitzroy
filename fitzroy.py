@@ -1,8 +1,6 @@
 # import boto3
-# import os
+import os
 import requests
-
-# URL = os.environ["TEST_URL"]
 
 FITZROY_URL = "https://www.patagonia.com/on/demandware.store/Sites-patagonia-us-Site/en_US/Product-VariationAttributes?version=2&pid=195699027954&storeID=null"
 EXAMPLE_URL = "https://www.patagonia.com/on/demandware.store/Sites-patagonia-us-Site/en_US/Product-VariationAttributes?version=2&pid=195699137363&storeID=null"
@@ -34,6 +32,9 @@ def send_message(message):
 
 # entry point for lambda
 def handle_event(event, context):
+    # TODO: remove
+    requests.get(os.environ["TEST_URL"])
+
     try:
         if message := check_price(FITZROY_URL, EXPECTED_PRICE):
             send_message(message)

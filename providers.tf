@@ -1,5 +1,8 @@
 terraform {
   required_providers {
+    local = {
+      source = "hashicorp/local"
+    }
     aws = {
       source  = "hashicorp/aws"
       version = "~> 4.0"
@@ -7,7 +10,6 @@ terraform {
   }
 }
 
-# Configure the AWS Provider
 provider "aws" {
   region                   = "us-west-2"
   shared_credentials_files = ["~/.aws/credentials"]

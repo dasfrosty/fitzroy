@@ -1,5 +1,5 @@
 resource "aws_lambda_function" "fitzroy_lambda" {
-  filename      = "${local.lambda_archive_filename}"
+  filename      = local.lambda_archive_filename
   function_name = "fitzroy_lambda"
   role          = aws_iam_role.iam_for_lambda.arn
   handler       = "fitzroy.handle_event"

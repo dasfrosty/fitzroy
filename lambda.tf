@@ -10,7 +10,8 @@ resource "aws_lambda_function" "fitzroy_lambda" {
 
   environment {
     variables = {
-      TEST_URL = var.test_url
+      PRODUCT_URL = var.product_url
+      EXPECTED_PRICE = var.expected_price
     }
   }
 }

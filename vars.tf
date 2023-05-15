@@ -1,4 +1,9 @@
-variable "test_url" {
+variable "product_url" {
+  type     = string
+  nullable = false
+}
+
+variable "expected_price" {
   type     = string
   nullable = false
 }

@@ -27,13 +27,15 @@ def _check_price(product_url: str, link_url: str, expected_price: float):
         if item.get("price", {}).get("list") != None:
             return f"[FITZROY] Color {color} may be on sale. Check online at {link_url}"
 
+    print(f"Price found matches expected: price = ${price}")
+
 
 def _send_message(message: str, sns_topic_arn: str):
-    print(message)
+    print(f"Sending message: {message}")
 
     topic = sns.Topic(sns_topic_arn)
     response = topic.publish(Message=message)
-    print(response)
+    print(f"SNS message published to topic: response = {response}")
 
 
 # entry point for lambda

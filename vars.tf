@@ -3,6 +3,11 @@ variable "product_url" {
   nullable = false
 }
 
+variable "link_url" {
+  type     = string
+  nullable = false
+}
+
 variable "expected_price" {
   type     = string
   nullable = false

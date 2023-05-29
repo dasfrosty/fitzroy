@@ -18,7 +18,6 @@ data "aws_iam_policy_document" "policy_for_lambda" {
   statement {
     effect = "Allow"
     actions = [
-      "logs:CreateLogGroup",
       "logs:CreateLogStream",
       "logs:PutLogEvents"
     ]

@@ -17,3 +17,8 @@ resource "aws_lambda_function" "fitzroy_lambda" {
     }
   }
 }
+
+resource "aws_cloudwatch_log_group" "fitzroy_lambda_logs" {
+  name              = "/aws/lambda/${aws_lambda_function.fitzroy_lambda.function_name}"
+  retention_in_days = 180
+}

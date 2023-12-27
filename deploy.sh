@@ -14,4 +14,4 @@ zip ./dist/fitzroy_lambda.zip fitzroy.py
 (cd ./dist/package && zip -r ../fitzroy_lambda.zip .)
 
 # apply
-terraform apply -auto-approve -var-file=./scratch/vars.txt
+terraform apply -auto-approve -var-file=./vars.txt

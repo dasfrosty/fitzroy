@@ -140,6 +140,9 @@ dmypy.json
 terraform.tfstate
 terraform.tfstate.*
 
+# local config
+vars.txt
+
 # build artifacts
 dist/
 

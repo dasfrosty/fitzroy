@@ -1,0 +1,8 @@
+# terraform vars
+notification_email_address="example@gmail.com"
+zapier_email_address="example.123456@zapiermail.com"
+
+# env vars
+product_url="https://www.example.com/product/sweater/size/md"
+link_url="https://bit.ly/123456"
+expected_price="79.99"

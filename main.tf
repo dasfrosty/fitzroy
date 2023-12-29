@@ -8,6 +8,10 @@ terraform {
       version = "~> 4.0"
     }
   }
+
+  backend "local" {
+    path = "/etc/fitzroy/tfstate/terraform.tfstate"
+  }
 }
 
 provider "aws" {

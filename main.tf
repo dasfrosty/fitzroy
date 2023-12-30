@@ -10,7 +10,7 @@ terraform {
   }
 
   backend "local" {
-    path = "/etc/fitzroy/tfstate/terraform.tfstate"
+    path = "terraform.tfstate"
   }
 }
 

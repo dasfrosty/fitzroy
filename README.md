@@ -33,11 +33,11 @@ Run the deploy script:
 ### Show changes needed
 
 ```
-terraform plan -var-file=./scratch/vars.txt
+terraform plan -var-file=./vars.txt
 ```
 
 ### Apply changes
 
 ```
-terraform apply -var-file=./scratch/vars.txt
+terraform apply -var-file=./vars.txt
 ```

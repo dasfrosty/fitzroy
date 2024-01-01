@@ -12,6 +12,7 @@ resource "aws_lambda_function" "fitzroy_lambda" {
     variables = {
       PRODUCT_URL    = var.product_url
       LINK_URL       = var.link_url
+      DESIRED_COLOR  = var.desired_color
       EXPECTED_PRICE = var.expected_price
       SNS_TOPIC_ARN  = aws_sns_topic.fitzroy_notifications_topic.arn
     }

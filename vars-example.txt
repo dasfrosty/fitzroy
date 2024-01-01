@@ -5,4 +5,5 @@ zapier_email_address="example.123456@zapiermail.com"
 # env vars
 product_url="https://www.example.com/product/sweater/size/md"
 link_url="https://bit.ly/123456"
+desired_color="GREEN"
 expected_price="79.99"

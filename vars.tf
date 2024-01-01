@@ -8,6 +8,11 @@ variable "link_url" {
   nullable = false
 }
 
+variable "desired_color" {
+  type     = string
+  nullable = false
+}
+
 variable "expected_price" {
   type     = string
   nullable = false

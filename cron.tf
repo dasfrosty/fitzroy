@@ -1,6 +1,6 @@
 resource "aws_cloudwatch_event_rule" "cron_schedule" {
   name                = "fitzroy_lambda_event_rule"
-  schedule_expression = "cron(15 16 * * ? *)"
+  schedule_expression = "cron(0 18 ? * TUE *)"
 }
 
 resource "aws_cloudwatch_event_target" "cron_target" {

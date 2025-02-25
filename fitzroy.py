@@ -5,6 +5,7 @@ import requests
 
 sns = boto3.resource("sns")
 
+USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36"
 
 def _check_price(
     product_url: str,
@@ -12,7 +13,8 @@ def _check_price(
     desired_color: str,
     expected_price: float,
 ):
-    result = requests.get(product_url).json()
+    response = requests.get(product_url, headers={"User-Agent": USER_AGENT})
+    result = response.json()
     color_price = result["product"]["colorPrice"]
     price = None
 

@@ -18,6 +18,11 @@ variable "expected_price" {
   nullable = false
 }
 
+variable "cron_schedule_utc" {
+  type     = string
+  nullable = false
+}
+
 variable "notification_email_address" {
   type     = string
   nullable = false

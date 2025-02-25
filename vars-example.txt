@@ -1,4 +1,5 @@
 # terraform vars
+cron_schedule_utc="15 16 * * ? *"
 notification_email_address="example@gmail.com"
 zapier_email_address="example.123456@zapiermail.com"
 
